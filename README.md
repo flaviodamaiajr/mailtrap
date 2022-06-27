@@ -35,6 +35,10 @@ This project is being developed with the following technologies:
 
 - <a href="https://mailtrap.io/" alt="Mailtrap - Email Sandbox Service" target="_blank">Mailtrap - Email Sandbox Service</a>
 
+## ℹ️ Requirements
+
+It's necessary create an account on Mailtrap.io to use this library.
+
 ## 📝 License
 
 This project is under the MIT license. See the file [LICENSE](LICENSE) for more details.
