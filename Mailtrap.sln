@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mailtrap", "Mailtrap\Mailtrap.csproj", "{8DD3D7DD-105B-477D-B8DB-E3172B7E0880}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mailtrap.Test", "Mailtrap.Test\Mailtrap.Test.csproj", "{B70DDA82-FB3F-4EF1-A137-61746A559B6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DD3D7DD-105B-477D-B8DB-E3172B7E0880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DD3D7DD-105B-477D-B8DB-E3172B7E0880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DD3D7DD-105B-477D-B8DB-E3172B7E0880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DD3D7DD-105B-477D-B8DB-E3172B7E0880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B70DDA82-FB3F-4EF1-A137-61746A559B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B70DDA82-FB3F-4EF1-A137-61746A559B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B70DDA82-FB3F-4EF1-A137-61746A559B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B70DDA82-FB3F-4EF1-A137-61746A559B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {439FBAD8-11D0-45EB-B835-CC53FC7F918F}
+	EndGlobalSection
+EndGlobal

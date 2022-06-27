@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <PackageProjectUrl>https://github.com/flaviodamaiajr/mailtrap</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/flaviodamaiajr/mailtrap</RepositoryUrl>
+    <PackageTags>mailtrap; mail sender; smtp test;</PackageTags>
+    <Authors>Flávio Antônio da Maia Júnior</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Source\Resources\ExceptionsMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ExceptionsMessages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Source\Resources\ExceptionsMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ExceptionsMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
