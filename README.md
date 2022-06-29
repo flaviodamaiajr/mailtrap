@@ -69,10 +69,12 @@ var email = new Email(
     "to@mailtrap.io",
     "from@mailtrap.io",
     "Sending e-mail test using Mailtrap for .NET 📬",
-    "Ahoooy! It realy works! 😎");
+    "Ahoooy! It really works! 😎");
 
 mailtrap.Send(email);
 ```
+
+Just check our <a href="https://github.com/flaviodamaiajr/mailtrap/wiki" alt="Mailtrap Wiki">Wiki</a> for more details and samples of how to use **Mailtrap** in your applications.
 
 ## 📝 License
 
