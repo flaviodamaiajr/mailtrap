@@ -10,6 +10,7 @@
   <a href="https://www.nuget.org/packages/Mailtrap/" target="_blank"><img alt="Downloads" src="https://img.shields.io/nuget/dt/Mailtrap.svg?label=Downloads&color=8257E5&labelColor=FFFFFF" /></a>
   <a href="https://github.com/flaviodamaiajr/mailtrap/pulls"><img alt="PRs welcome!" src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=8257E5&labelColor=FFFFFF" /></a>
   <a href="#-license"><img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=FFFFFF" /></a>
+
 <p>
 
 <br>
@@ -36,7 +37,7 @@ This project is being developed with the following technologies:
 
 ## ℹ️ Requirements
 
-It's necessary create an account on Mailtrap.io to use this library.
+It's necessary to create an account on Mailtrap.io to use this library.
 
 ## 👨‍💻 How to use
 
