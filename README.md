@@ -8,10 +8,11 @@
 </p>
 
 <p align="center">
- <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=8257E5&labelColor=FFFFFF" alt="PRs welcome!" />
-
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=FFFFFF">
-</p>
+  <a href="https://www.nuget.org/packages/Mailtrap/" target="_blank"><img alt="Version" src="https://img.shields.io/nuget/v/Mailtrap.svg?label=NuGet&message=Version&color=8257E5&labelColor=FFFFFF "/></a>
+  <a href="https://www.nuget.org/packages/Mailtrap/" target="_blank"><img alt="Downloads" src="https://img.shields.io/nuget/dt/Mailtrap.svg?label=Downloads&color=8257E5&labelColor=FFFFFF" /></a>
+  <a href="https://github.com/flaviodamaiajr/mailtrap/pulls"><img alt="PRs welcome!" src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=8257E5&labelColor=FFFFFF" /></a>
+  <a href="#-license"><img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=FFFFFF" /></a>
+<p>
 
 <br>
 
@@ -34,6 +35,42 @@ This project is being developed with the following technologies:
 ## 🤝 Services
 
 - <a href="https://mailtrap.io/" alt="Mailtrap - Email Sandbox Service" target="_blank">Mailtrap - Email Sandbox Service</a>
+
+## 👨‍💻 How to use
+
+### Add package
+
+It's possible to add using .NET CLI or Package Manager.
+
+#### .NET CLI
+
+```
+dotnet add package Mailtrap
+```
+
+#### Package Manager
+
+```
+PM> Install-Package Mailtrap
+```
+
+Check other alternatives on <a href="https://www.nuget.org/packages/Mailtrap/">NuGet.org</a>
+
+### Sample Code
+
+```csharp
+using Mailtrap.Source.Models;
+
+var mailtrap = new MailtrapSender("your username", "your password");
+
+var email = new Email(
+    "to@mailtrap.io",
+    "from@mailtrap.io",
+    "Sending e-mail test using Mailtrap for .NET 📬",
+    "Ahoooy! It realy works! 😎");
+
+mailtrap.Send(email);
+```
 
 ## 📝 License
 
