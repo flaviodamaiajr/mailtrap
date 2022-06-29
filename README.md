@@ -74,7 +74,7 @@ var email = new Email(
 mailtrap.Send(email);
 ```
 
-###For More datails on Wiki
+Just check our <a href="https://github.com/flaviodamaiajr/mailtrap/wiki" alt="Mailtrap Wiki">Wiki</a> for more details and samples of how to use **Mailtrap** in your applications.
 
 ## 📝 License
 
