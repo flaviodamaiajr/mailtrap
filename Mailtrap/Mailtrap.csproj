@@ -1,27 +1,42 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <Nullable>enable</Nullable>
-    <PackageProjectUrl>https://github.com/flaviodamaiajr/mailtrap</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/flaviodamaiajr/mailtrap</RepositoryUrl>
-    <PackageTags>mailtrap; mail sender; smtp test;</PackageTags>
-    <Authors>Flávio Antônio da Maia Júnior</Authors>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<Nullable>enable</Nullable>
 
-  <ItemGroup>
-    <Compile Update="Source\Resources\ExceptionsMessages.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ExceptionsMessages.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
+		<PacakageId>Mailtrap</PacakageId>
+		<Version>1.0.0</Version>
+		<icon>https://ik.imagekit.io/3vkxuqnyfv/mailtrap-icon-nuget_sdNbUBbTR.png</icon>		
+		<License>MIT</License>
+		<Authors>Flávio Antônio da Maia Júnior</Authors>
+		<PackageProjectUrl>https://github.com/flaviodamaiajr/mailtrap</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/flaviodamaiajr/mailtrap</RepositoryUrl>
+		<PackageTags>mailtrap; mail sender; smtp test;</PackageTags>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageDescription>Simple library to optimize email sending tests using Mailtrap Sandbox Service</PackageDescription>
+		<Description>Simple library to optimize email sending tests using Mailtrap Sandbox Service</Description>
+		<Title>Mailtrap</Title>
+		<Summary>Simple library to optimize email sending tests using Mailtrap Sandbox Service</Summary>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Update="Source\Resources\ExceptionsMessages.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ExceptionsMessages.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="icon.png" Pack="true" PackagePath="\"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Source\Resources\ExceptionsMessages.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>ExceptionsMessages.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Source\Resources\ExceptionsMessages.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>ExceptionsMessages.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
 
 </Project>
