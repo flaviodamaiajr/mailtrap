@@ -67,10 +67,12 @@ var email = new Email(
     "to@mailtrap.io",
     "from@mailtrap.io",
     "Sending e-mail test using Mailtrap for .NET 📬",
-    "Ahoooy! It realy works! 😎");
+    "Ahoooy! It really works! 😎");
 
 mailtrap.Send(email);
 ```
+
+###For More datails on Wiki
 
 ## 📝 License
 
