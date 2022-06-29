@@ -1,5 +1,3 @@
-﻿# Mailtrap 📬
-
 <p align="center">
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -35,6 +33,10 @@ This project is being developed with the following technologies:
 ## 🤝 Services
 
 - <a href="https://mailtrap.io/" alt="Mailtrap - Email Sandbox Service" target="_blank">Mailtrap - Email Sandbox Service</a>
+
+## ℹ️ Requirements
+
+It's necessary create an account on Mailtrap.io to use this library.
 
 ## 👨‍💻 How to use
 
