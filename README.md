@@ -80,3 +80,7 @@ Just check our <a href="https://github.com/flaviodamaiajr/mailtrap/wiki" alt="Ma
 ## 📝 License
 
 This project is under the MIT license. See the file [LICENSE](LICENSE) for more details.
+
+## ☕️ Support
+
+<p><a href="https://www.buymeacoffee.com/flaviodamaiajr"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="flaviodamaiajr" /></a></p><br><br>
