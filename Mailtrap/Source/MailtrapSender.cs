@@ -41,7 +41,9 @@ public class MailtrapSender : IMailtrapSender, IDisposable
         {
             IsBodyHtml = email.IsBodyHtml
         };
-
+        
+        AddAttachments(email, mailMessage);
+        
         _smtpClient.Send(mailMessage);
     }
 
@@ -52,7 +54,26 @@ public class MailtrapSender : IMailtrapSender, IDisposable
             IsBodyHtml = email.IsBodyHtml
         };
 
+        AddAttachments(email, mailMessage);
+
         _smtpClient.SendAsync(mailMessage, cancellationToken);
         return Task.CompletedTask;
+    }
+
+    private static void AddAttachments(Email email, MailMessage mailMessage)
+    {
+        if (email.AttachmentPaths is null)
+        {
+            return;
+        }
+
+        foreach (string attachmentPath in email.AttachmentPaths)
+        {
+            if (!string.IsNullOrWhiteSpace(attachmentPath))
+            {
+                Attachment attachment = new Attachment(attachmentPath);
+                mailMessage.Attachments.Add(attachment);
+            }
+        }
     }
 }

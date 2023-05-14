@@ -8,7 +8,7 @@ namespace Mailtrap.Test
         }
 
 
-        [Test(Author = "Flávio", Description = "Validate credential without username and password filled in")]
+        [Test(Author = "Flavio", Description = "Validate credential without username and password filled in")]
         public void Test_MailTrap_Credential_Empty()
         {
             Assert.That(() => new MailtrapSender("", ""),
@@ -18,7 +18,7 @@ namespace Mailtrap.Test
                         .EqualTo("Check your credential"));
         }
 
-        [Test(Author = "Flávio", Description = "Validate credential without username filled in")]
+        [Test(Author = "Flavio", Description = "Validate credential without username filled in")]
         public void Test_MailTrap_Credential_Username_Empty()
         {
             Assert.That(() => new MailtrapSender("", "password"),
@@ -27,7 +27,7 @@ namespace Mailtrap.Test
                         .Message
                         .EqualTo("Check your credential"));
         }
-        [Test(Author = "Flávio", Description = "Validate credential without password filled in")]
+        [Test(Author = "Flavio", Description = "Validate credential without password filled in")]
         public void Test_MailTrap_Credential_Password_Empty()
         {
             Assert.That(() => new MailtrapSender("username", ""),
@@ -38,7 +38,7 @@ namespace Mailtrap.Test
         }
 
 
-        [Test(Author = "Flávio", Description = "Validate Mailtrap port")]
+        [Test(Author = "Flavio", Description = "Validate Mailtrap port")]
         public void Test_Port_Validator_Invalid_Port()
         {
             Assert.That(() => new MailtrapSender("userName", "password", port: 1234),
