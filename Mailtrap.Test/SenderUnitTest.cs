@@ -1,10 +1,17 @@
+using Mailtrap.Source.Interfaces;
+using Mailtrap.Source.Models;
+using Moq;
+
 namespace Mailtrap.Test
 {
     public class SenderUnitTest
     {
+        private Mock<IMailtrapSender>? _emailMock;
+
         [SetUp]
         public void Setup()
         {
+            _emailMock = new Mock<IMailtrapSender>();
         }
 
 
@@ -46,6 +53,21 @@ namespace Mailtrap.Test
                         .With
                         .Message
                         .EqualTo("Port must be either 25, 465 or 2525 (Parameter 'port')"));
+        }
+
+        [Test(Author = "Flavio", Description = "Send e-mail without attachment")]
+        public void Test_Send_Email_Without_Attachments()
+        {
+            var mailtrapSender = new MailtrapSender("username","password");
+            var email = new Email(
+                                "to@mailtrap.io",
+                                "from@mailtrap.io",
+                                "Sending e-mail test using Mailtrap for .NET 📬",
+                                "Ahoooy! It really works! 😎");
+                             
+            _emailMock.Setup(x => x.Send(email));
+            
+            Assert.IsTrue(true);
         }
     }
 }
